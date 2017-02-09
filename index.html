@@ -10,7 +10,61 @@
     <script>
 		$(document).ready(function () {
 			CreateListBox();
+			$('.selection_box').click(function (e) {
+				if ($(e.target).hasClass("list_item")) {
+					$(this).find('li.selected').removeClass("selected");
+					$(e.target).addClass("selected");
+				}
+			});
 
+			$('#nav_prev').click(function () {
+				var first_elem = $('.selection_box ul li').first();
+				//console.log("first element", first_elem);
+				var was_selected = $('.selection_box').find('li.selected');
+				//console.log("was selected", was_selected);
+				if (was_selected[0] == first_elem[0]) {
+					//last item
+					$('.selection_box .footer .middle')
+						.toggleClass('middle noti')
+						.html("Reached first item");
+					console.log("reached last item");
+				} else {
+					$('.selection_box .footer .noti')
+						.toggleClass('noti middle')
+						.html("•••");
+					//deselect
+					was_selected
+						.removeClass("selected");
+					//select next
+					was_selected
+						.prev()
+						.addClass("selected");
+					//.append("<span></span>");
+				}
+			});
+			$('#nav_next').click(function () {
+				var last_elem = $('.selection_box ul li').last();
+				//console.log("last element", last_elem);
+				var was_selected = $('.selection_box').find('li.selected');
+				//console.log("was selected", was_selected);
+				if (was_selected[0] == last_elem[0]) {
+					console.log("reached last item");
+					$('.selection_box .footer .middle')
+						.toggleClass('middle noti')
+						.html("Reached last item");
+				} else {
+					$('.selection_box .footer .noti')
+						.toggleClass('noti middle')
+						.html("•••");
+					//deselect
+					was_selected
+						.removeClass("selected");
+					//select next
+					was_selected
+						.next()
+						.addClass("selected");
+				}
+			});
 		});
     </script>
     <title>Дизайнерская мастерская</title>
@@ -27,8 +81,6 @@
     <label for="tab2" title="Вкладка 2">DataTables</label>  
 
     <section id="content1">
-        <input type="text" id="input" class="materialfield"/>
-        <input type="button" class="roundmaterial blue" id="insert" value="CLICK">
         <input type="button" class="linux red"/>
         <input type="button" class="linux blue"/>
         <input type="button" class="linux green"/>
