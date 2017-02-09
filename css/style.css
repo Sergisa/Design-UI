@@ -79,6 +79,7 @@ body.darkTheme{
 	border-top: none;
 }
 .selection_box ul li{
+	overflow: hidden;
 	line-height: 30px;
 	background: rgb(255,255,255);
 	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 50%, rgba(225,225,225,1) 51%, rgba(246,246,246,1) 100%);
@@ -196,9 +197,9 @@ body.darkTheme{
 	font-family: Verdana;
 	font-weight: bold;
 	color: rgb(57, 57, 57);
-	width: 20px;
-	height: 20px;
-	border-radius: 10px;
+	width: 24px;
+	height: 24px;
+	border-radius: 12px;
 	border-style: solid;
 	border-width: 2px;
 	padding: 0px;

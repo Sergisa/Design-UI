@@ -1,7 +1,7 @@
 /**
  * Created by Sergey on 09.02.2017.
  */
-$(document).ready(function(){
+
 	$('.selection_box').click(function (e) {
 		if ($(e.target).hasClass("list_item")) {
 
@@ -39,9 +39,7 @@ $(document).ready(function(){
 				.toggleClass('middle noti')
 				.html("Reached first item");
 			console.log("reached last item");
-
 		} else {
-
 			$('.selection_box .footer .noti')
 				.toggleClass('noti middle')
 				.html("•••");
@@ -79,4 +77,3 @@ $(document).ready(function(){
 				.addClass("selected");
 		}
 	});
-});
