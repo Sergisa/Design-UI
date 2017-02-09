@@ -95,7 +95,7 @@
 				});
 			});
 		</script>
-		<title>проверка работы с JSON и XML</title>
+		<title>Дизайнерская мастерская</title>
 		<meta charset="utf-8" />
 
 	</head> 
