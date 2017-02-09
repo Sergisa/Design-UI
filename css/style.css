@@ -211,17 +211,14 @@ input.linux{
 	cursor: pointer;
 }
 .linux:active{
-
 	box-shadow: 0px 0px 5px 0px rgba(11, 11, 11, 0.49) inset;
 	-webkit-box-shadow: 0px 0px 5px 0px rgba(11, 11, 11, 0.49) inset;
-
 	-moz-box-shadow: 0px 0px 5px 0px rgba(11, 11, 11, 0.49) inset;
 }
 .window_operate{
 	position: relative;
     right: 0px;
     top: 0px;
-    
     float: right;
 }
 .linux.red{
@@ -232,7 +229,6 @@ input.linux{
 	background: -webkit-linear-gradient(top,  rgba(255,216,216,1) 0%,rgba(255,127,127,1) 24%,rgba(255,12,12,1) 51%,rgba(255,94,94,1) 93%,rgba(255,147,147,1) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom,  rgba(255,216,216,1) 0%,rgba(255,127,127,1) 24%,rgba(255,12,12,1) 51%,rgba(255,94,94,1) 93%,rgba(255,147,147,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd8d8', endColorstr='#ff9393',GradientType=0 ); /* IE6-9 */
-
 }
 .linux.green{
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#daffd8+0,85ff7f+24,24ff0c+51,69ff5e+93,93ff93+100 */
@@ -241,7 +237,6 @@ input.linux{
 	background: -webkit-linear-gradient(top,  rgba(218,255,216,1) 0%,rgba(133,255,127,1) 24%,rgba(36,255,12,1) 51%,rgba(105,255,94,1) 93%,rgba(147,255,147,1) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom,  rgba(218,255,216,1) 0%,rgba(133,255,127,1) 24%,rgba(36,255,12,1) 51%,rgba(105,255,94,1) 93%,rgba(147,255,147,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#daffd8', endColorstr='#93ff93',GradientType=0 ); /* IE6-9 */
-
 }
 .linux.blue {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d8d9ff+0,7f81ff+24,0c20ff+51,5e63ff+93,939bff+100 */
