@@ -191,8 +191,19 @@ body.darkTheme{
 #drag_in.dragIn{
 	background-color:#bcddcb;
 }
+button.linux::-moz-focus-inner,
+button.linux::-webkit-focus-inner{
+  border:none;
+}
+input:focus,
+input:active,
+button:focus,
+button:active{
+  outline:none;
+}
 button.linux,
 input.linux{
+  	
 	text-align: center;
 	//line-height: ;
 	font-family: Verdana;
